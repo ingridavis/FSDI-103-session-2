@@ -1,0 +1,287 @@
+/* global */
+:root{
+    --details: #ffcc02;
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+h2{
+    
+    font-weight: 400;
+    letter-spacing: .5rem;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 300;
+}
+img{
+    max-width: 100%;
+}
+
+/* utilities*/
+
+/* information section */
+section.information{
+    background-color: black;
+    color: white;
+}
+.title{
+    padding-left: 1rem;
+    text-align: center;
+}
+section.information h2{
+    font-size: 1.8rem;
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+    border-left: 1px solid var(--details);
+    
+}
+@media(min-width:768px){
+    section.information h2{
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
+.info-text{
+    padding: 1rem;
+}
+.info h3{
+    text-align: center;
+    width: 7rem;
+    border-left: 1px solid #8a8a8a;
+    border-right: 1px solid #8a8a8a;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    letter-spacing: .3rem;
+    
+}
+.info-text p{
+    color: #8a8a8a;
+}
+
+.grid-three{
+    display: grid;
+}
+
+@media(min-width: 768px){
+    .grid-three{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
+.info-text p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+.info-text p:hover{
+    color: #8a8a8a;
+}
+
+/* History section */ 
+.history-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 600px;
+
+}
+.history-text{
+    background-image: url(https://cms.fauna-flora.org/wp-content/uploads/2018/03/siamese-crocodile.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem 7rem 4rem 7rem;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+.history-text p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 1rem;
+}
+.history-text h3{
+    width: 7rem;
+    text-align: center;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    color: white;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    letter-spacing: .3rem;
+}
+.history-title h2{
+    color: #a3a3a3;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+}
+ 
+/* footer section */
+div.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+footer.footer-site{
+    background-color: #dedede;
+    height: 20vh;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+div.footer-more-section{
+    display: block;
+    border-left: 1px solid black;
+    margin-left: 5rem;
+    padding-left: 1rem;
+    height: 8rem;
+    
+}
+div.footer-more-section h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+}
+div.footer-more-section input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    letter-spacing: .3rem;
+}
+div.footer-more-section input[type="email"]{
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+div.social-networks{
+    display: block;
+    border-left: 1px solid black;
+    margin-left: 3rem;
+    padding-left: 1rem;
+    padding-right: 10rem;
+}
+div.social-networks div{
+    height: 6rem;
+}
+div.icons img{
+    width: 20%;
+    height: 20%;
+}  
+div.social-networks h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+
+
+/* header */
+header.header-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.black-bar{
+    background-color: black;
+    height: 5vh;
+    padding-top: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+div.black-bar a{
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+
+}
+@media(min-width:768px){
+    div.black-bar a{
+        text-transform: uppercase;
+        font-size: .8rem;
+        color: white;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+}
+}
+
+div.white-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 12vh;
+    padding-top: 1.5rem;
+    border-bottom: 1px solid #8a8a8a;
+}
+div.white-bar img{
+    width: 11rem;
+    height: 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+div.white-bar nav{
+    display: none;
+}
+@media(min-width: 768px){
+    div.white-bar nav{
+        display: flex;
+        align-items: center0;
+}
+}
+
+div.white-bar nav a{
+    text-decoration: none;
+    text-align: left;
+    margin-right: 1rem;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .9rem;
+    font-weight: 400;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    border-left: 1px solid #8a8a8a;
+    height: 1.5rem;
+
+}
+div.white-bar nav a:last-child{
+    border-right: 1px solid #8a8a8a;
+}
+div.white-bar nav a:hover{
+    color:var(--details);
+}
+div.icons{
+    display: flex;
+    align-items: center;
+}
+div.icons i{
+    font-size:1.5rem;
+    padding-right:2rem;
+}
